@@ -1,0 +1,48 @@
+
+README
+
+This is sample mail service web application that allows users to send simple email from a web page.
+The application utilizes two different email api providers to ensure availability.
+The email api providers are:
+Mailgun - http://documentation.mailgun.com/quickstart.html#sending-messages
+Mandrill - https://mandrillapp.com/api/docs/messages.JSON.html#method-send
+
+TECHNICAL DETAILS
+
+WEB PAGE
+The web page collects necessary information of an email from a user, 
+and post it as a form to the server using a simple Ajax call.
+The web page uses alerify.js to improve user experience of notification delivery.
+alerify.js - http://fabien-d.github.io/alertify.js/
+
+SERVER
+The server receives a post request from web page and does re-contruction of information
+to match different api's of email services.
+The server checks the services' response to see if mail is sent successfully.
+And then respond to the http connection with the web page.
+
+
+CONTACT
+rnht@outlook.com
+
+
+Q&A
+
+Q: The project you chose 
+A: email service
+
+
+Q: The technical track you chose
+A: Back-end
+
+
+Q: Reasoning behind your technical choices
+A: Easiest way of implementing this project is using Python, 
+	but I haven't found a free host for Python. 
+	Therefore I used Java and free AWS.
+	Client side is a simple html page with ajax.
+
+Q: Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project
+A: Add more features, like file attachment, and server logging.
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="assets/alertify.js-0.3.11/themes/alertify.core.css" />
+<link rel="stylesheet" href="assets/alertify.js-0.3.11/themes/alertify.default.css" />
+<link rel="stylesheet" href="assets/main.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="assets/alertify.js-0.3.11/lib/alertify.min.js"></script>
+<script src="assets/main.js"></script>
+<title>Mail Service</title>
+</head>
+<body>
+    <div class="main-frame" id="mail">
+        <form id="the-form" action="" method="post" class="main-form">
+            <h1>You can send an email here</h1>
+            <label>
+                <span>To :</span>
+                <input id="to" type="email" name="to" placeholder="e.g. myfriend@mail.com" />
+            </label>
+
+            <label>
+                <span>Your Email :</span>
+                <input id="from" type="email" name="from" placeholder="e.g. myself@mail.com" />
+            </label>
+            
+            <label>
+                <span>Subject :</span>
+                <input id="subject" type="text" name="subject" placeholder="The subject of your message" />
+            </label>
+
+            <label>
+                <span>Message :</span>
+                <textarea id="text" name="text" placeholder="Your Message"></textarea>
+            </label>     
+             <label>
+                <span>&nbsp;</span> 
+                <input type="button" class="button" value="Send" onclick="sendClicked()" /> 
+            </label>    
+        </form>
+    </div>
+    <div class="main-frame" id="response">
+        <div class="main-form" id="msg">
+            <label id="msg-ok">You</label>
+            <label id="msg-badrequest">You</label>
+            <label id="msg-servicedown">You</label>
+            <button class="button">New Email</button>
+            <button class="button">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>
