@@ -26,23 +26,3 @@ CONTACT
 rnht@outlook.com
 
 
-Q&A
-
-Q: The project you chose 
-A: email service
-
-
-Q: The technical track you chose
-A: Back-end
-
-
-Q: Reasoning behind your technical choices
-A: Easiest way of implementing this project is using Python, 
-	but I haven't found a free host for Python. 
-	Therefore I used Java and free AWS.
-	Client side is a simple html page with ajax.
-
-Q: Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project
-A: Add more features, like file attachment, and server logging.
-
-
